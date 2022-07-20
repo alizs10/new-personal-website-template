@@ -1,20 +1,3 @@
-@font-face {
-  font-family: 'manototv';
-
-  src: url('manototvkalamefont.eot');
-
-  src: url('manototvkalamefont.eot?#iefix') format('embedded-opentype'),
-        url('manototvkalamefont.woff2') format('woff2'),
-        url('manototvkalamefont.woff') format('woff'),
-        url('manototvkalamefont.ttf') format('truetype');
-
-  font-weight: normal;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
 /*
 ! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
 */

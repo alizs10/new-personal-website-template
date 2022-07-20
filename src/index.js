@@ -1,7 +1,6 @@
-import {test} from './test.js';
+// add fonts
 import './styles/fonts/manototv/manototvkalamefont.eot';
 import './styles/fonts/manototv/manototvkalamefont.ttf';
 import './styles/fonts/manototv/manototvkalamefont.woff';
 import './styles/fonts/manototv/manototvkalamefont.woff2';
-
-console.log(test());
+import './styles/fonts/manototv/stylesheet.css';

@@ -9,7 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "[name][contenthash].js",
         clean: true,
-        assetModuleFilename: '[name][ext]'
+        assetModuleFilename: 'assets/[name][ext]'
     },
     devtool: 'source-map',
     devServer: {
@@ -40,7 +40,18 @@ module.exports = {
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'styles/fonts/[name][ext]',
+                },
             },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+                generator: {
+                    filename: 'styles/[name][ext]',
+                },
+            },
+
         ],
     },
     plugins: [
