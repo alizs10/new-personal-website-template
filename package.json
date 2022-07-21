@@ -4,7 +4,7 @@
   "description": "personal website tempalte",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && npm run build-css",
     "dev": "webpack serve",
     "build-css": "npx tailwindcss -i ./src/styles/styles.css -o ./dist/output.css"
   },
