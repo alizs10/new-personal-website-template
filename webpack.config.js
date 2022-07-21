@@ -56,9 +56,14 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "new personal website plugin",
+            title: "new personal website template",
             filename: "index.html",
             template: "src/template.html",
-        })
+        }),
+        new HtmlWebpackPlugin({
+            title: "skills | new personal website template",
+            filename: "skills.html",
+            template: "src/skills.html",
+        }),
     ]
 }
