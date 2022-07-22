@@ -75,5 +75,10 @@ module.exports = {
             filename: "sample.html",
             template: "src/sample.html",
         }),
+        new HtmlWebpackPlugin({
+            title: "contact | new personal website template",
+            filename: "contact.html",
+            template: "src/contact.html",
+        }),
     ]
 }

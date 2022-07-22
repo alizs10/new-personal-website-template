@@ -599,6 +599,10 @@ html {
   bottom: 1.25rem;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
 .left-8 {
   left: 2rem;
 }
@@ -789,6 +793,14 @@ html {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -887,6 +899,10 @@ html {
 .bg-\[\#0088cc\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 136 204 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-white {
@@ -997,14 +1013,14 @@ html {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-\[\#200461\] {
   --tw-text-opacity: 1;
   color: rgb(32 4 97 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1131,7 +1147,16 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 @media (min-width: 400px) {
+  .xs\:left-4 {
+    left: 1rem;
+  }
+
   .xs\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -1277,6 +1302,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .lg\:left-8 {
+    left: 2rem;
+  }
+
   .lg\:bottom-10 {
     bottom: 2.5rem;
   }
@@ -1299,6 +1328,11 @@ html {
 
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-xl {
