@@ -4,6 +4,7 @@ module.exports = {
     mode: "development",
     entry: {
         bundle: path.resolve(__dirname, "src/index.js"),
+        samples: path.resolve(__dirname, "src/samples.js"),
     },
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -20,6 +21,11 @@ module.exports = {
         open: true,
         compress: true,
         historyApiFallback: true
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        },
     },
     module: {
         rules: [
@@ -59,26 +65,36 @@ module.exports = {
             title: "new personal website template",
             filename: "index.html",
             template: "src/template.html",
+            inject: true,
+            chunks: ['bundle']
         }),
         new HtmlWebpackPlugin({
             title: "skills | new personal website template",
             filename: "skills.html",
             template: "src/skills.html",
+            inject: true,
+            chunks: ['bundle']
         }),
         new HtmlWebpackPlugin({
             title: "samples | new personal website template",
             filename: "samples.html",
             template: "src/samples.html",
+            inject: true,
+            chunks: ['samples']
         }),
         new HtmlWebpackPlugin({
             title: "sample | samples | new personal website template",
             filename: "sample.html",
             template: "src/sample.html",
+            inject: true,
+            chunks: ['bundle']
         }),
         new HtmlWebpackPlugin({
             title: "contact | new personal website template",
             filename: "contact.html",
             template: "src/contact.html",
+            inject: true,
+            chunks: ['bundle']
         }),
     ]
 }
