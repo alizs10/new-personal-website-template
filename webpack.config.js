@@ -96,5 +96,12 @@ module.exports = {
             inject: true,
             chunks: ['bundle']
         }),
+        new HtmlWebpackPlugin({
+            title: "login | new personal website template",
+            filename: "login.html",
+            template: "src/login.html",
+            inject: true,
+            chunks: ['bundle']
+        }),
     ]
 }
