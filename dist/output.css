@@ -1253,6 +1253,10 @@ html {
     width: 500px;
   }
 
+  .md\:w-\[250px\] {
+    width: 250px;
+  }
+
   .md\:min-w-\[250px\] {
     min-width: 250px;
   }
@@ -1327,6 +1331,10 @@ html {
 
   .lg\:w-\[800px\] {
     width: 800px;
+  }
+
+  .lg\:w-\[300px\] {
+    width: 300px;
   }
 
   .lg\:min-w-\[300px\] {
