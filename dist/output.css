@@ -603,6 +603,14 @@ html {
   left: 0.5rem;
 }
 
+.top-\[calc\(100\%_\+_10px\)\] {
+  top: calc(100% + 10px);
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .left-8 {
   left: 2rem;
 }
@@ -611,16 +619,16 @@ html {
   top: calc(50% - 1rem);
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .right-0 {
   right: 0px;
 }
 
 .z-20 {
   z-index: 20;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-span-1 {
@@ -839,6 +847,10 @@ html {
   overflow-x: scroll;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -955,6 +967,10 @@ html {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -1059,6 +1075,20 @@ html {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -1214,6 +1244,14 @@ html {
 
   .md\:top-20 {
     top: 5rem;
+  }
+
+  .md\:top-0 {
+    top: 0px;
+  }
+
+  .md\:left-\[calc\(100\%_\+_10px\)\] {
+    left: calc(100% + 10px);
   }
 
   .md\:order-last {

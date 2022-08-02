@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         bundle: path.resolve(__dirname, "src/index.js"),
         samples: path.resolve(__dirname, "src/samples.js"),
+        sample: path.resolve(__dirname, "src/sample.js"),
     },
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -87,7 +88,7 @@ module.exports = {
             filename: "sample.html",
             template: "src/sample.html",
             inject: true,
-            chunks: ['bundle']
+            chunks: ['sample']
         }),
         new HtmlWebpackPlugin({
             title: "contact | new personal website template",
